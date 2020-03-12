@@ -1,0 +1,297 @@
+/* general sections */
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 54px;
+    color: #EEE;
+    background-color: #0f1113;
+    margin-left: 10%;
+    text-align: center;
+}
+    
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sniglet', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #BBB;
+}
+  
+h1 {
+    font-size: 64px;
+    line-height: 88px;
+}
+  
+h2 {
+    font-size: 55px;
+    color: rgb(27, 70, 211)
+}
+
+h2:hover {
+    color: #FFF;
+}
+  
+h3 {
+    font-size: 28px;
+}
+
+/* sidebar */
+
+#sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#sideNav .navbar-top {
+    display: flex;
+    margin: auto auto 0;
+}
+
+.img-profile {
+    border-radius: 50%;
+}
+
+#sideNav .navbar-top .img-profile {
+    max-width: 160px;
+    max-height: 160px;
+    border: 8px solid rgba(1, 1, 1, 0.2);
+}
+
+#sideNav .collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 70%;
+    margin-bottom: auto;
+}
+
+#sideNav .collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+}
+
+#sideNav .collapse .navbar-nav .nav-item {
+    display: block;
+}
+
+#sideNav .collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+}
+
+.nav-btn {
+    background-color: rgb(39, 83, 226);
+    border: 2px solid #FFF;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.nav-btn:hover {
+    background-color: #FFF;
+    border: 2px solid rgb(39, 83, 226);
+}
+
+.nav-link {
+    text-align: center;
+    color: rgb(159, 179, 246);
+}
+
+.nav-link:hover {
+    color: rgb(106, 139, 246)
+}
+  
+#navMail {
+    font-weight: 600;
+    text-transform: uppercase;
+    color:rgb(196, 208, 248);
+    margin-bottom: 5%;
+    margin-left: -10%;
+}
+  
+#navMail:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Page content */
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+li.list-inline-item {
+    list-style-type: none;
+    display: inline;
+}
+  
+.social-icons a {
+    display: inline-block;
+    height: 73px;
+    width: 73px;
+    background-color: #fff;
+    color: #0f1113 !important;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    line-height: 70px;
+    margin-right: 16px;
+}
+  
+.social-icons a:last-c1ild {
+    margin-right: 0;
+}
+  
+.social-icons a:hover {
+    background-color: rgb(27, 70, 211);
+}
+  
+.list-inline {
+    font-size: 72px;
+    text-align: center;
+}
+  
+.list-inline .list-inline-item i:hover {
+    color: rgb(27, 70, 211);
+}
+    
+.red {
+    color: rgb(27, 70, 211);
+}
+  
+#dl {
+    padding: 8px;
+    border-radius: 5px;
+    background:#333;
+    border: none;
+    }
+    
+#dl:hover {
+    background: #555;
+    }
+    
+#dl a {
+    color: #FFF;
+}
+    
+#dl a:hover {
+    text-decoration: none;
+}
+    
+.container {
+    padding-left: 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+}
+  
+.card {
+    color: #FFF;
+    width: 90%;
+    padding: 3%;
+    border-style: solid;
+    border-color: rgb(27, 70, 211);
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+  
+.card h5 {
+    color: rgb(69, 41, 161);
+    font-size: 16px;
+    text-align: left;
+}
+  
+.card img {
+    height: 150px;
+    width: 100%;
+    border-color: #0f1113;
+    border-radius: 25px;
+}
+  
+.sub {
+    font-style: italic;
+    color: #709beb;
+    font-weight: 400;
+}
+  
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+  
+#sideNav .navbar-toggler:focus {
+    outline-color: #709beb;
+}
+  
+#mail {
+    padding-left: 1%;
+}
+  
+section.resume {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    max-width: 1200px;
+}
+  
+section.resume .resume-item .resume-date {
+    min-width: 288px;
+}
+
+section.resume {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+}
+
+.navbar-expand {
+    background-color: rgb(39, 83, 226) !important;
+}
+  
+.text-primary {
+    color: rgb(27, 70, 211) !important;
+}
+  
+a {
+    color: rgb(27, 70, 211);
+}
+  
+a:hover, a:focus, a:active {
+    color: rgb(22, 44, 116);
+}
+
+.subtitle {
+    background-color:#0f1113;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+    border: 5px solid rgb(27, 70, 211);
+    border-radius: 12px;
+}
+
+.m-0 {
+    margin-left: 2%;
+    width: 70%
+}
+
+.m-1 {
+    margin-top: 5%;
+}
