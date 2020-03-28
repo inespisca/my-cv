@@ -10,7 +10,6 @@ body {
     color: #EEE;
     background-color: #0f1113;
     margin-left: 10%;
-    text-align: center;
 }
     
 h1, h2, h3, h4, h5, h6 {
@@ -40,50 +39,58 @@ h3 {
 
 /* sidebar */
 
-#sideNav {
-    text-align: center;
+.navbar-expand {
+    height: 100%;
+    width: 0;
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    background-color: #111;
+    overflow-x: hidden;
+    margin: auto auto 0; 
+    padding-top: 60px;
+    transition: 0.5s; 
+}
+  
+  /* The sidebar links */
+.navbar-expand a {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+  
+  /* Position and style the close button (top right corner) */
+.navbar-expand .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-#sideNav .navbar-top {
-    display: flex;
-    margin: auto auto 0;
+.closebtn {
+    color: #000;
 }
 
 .img-profile {
+    margin-top: 100px;
+    margin-left: 15%;
     border-radius: 50%;
+    width: 200px;
+    height: auto;
 }
 
-#sideNav .navbar-top .img-profile {
+.navbar-nav {
+    list-style: none;
+    margin-right: 50%;
+}
+
+#navbar-expand .navbar-top .img-profile {
     max-width: 160px;
     max-height: 160px;
     border: 8px solid rgba(1, 1, 1, 0.2);
-}
-
-#sideNav .collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 70%;
-    margin-bottom: auto;
-}
-
-#sideNav .collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-}
-
-#sideNav .collapse .navbar-nav .nav-item {
-    display: block;
-}
-
-#sideNav .collapse .navbar-nav .nav-item .nav-link {
-    display: block;
 }
 
 .nav-btn {
@@ -91,10 +98,8 @@ h3 {
     border: 2px solid #FFF;
     color: white;
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     width: 200px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -119,7 +124,7 @@ h3 {
     text-transform: uppercase;
     color:rgb(196, 208, 248);
     margin-bottom: 5%;
-    margin-left: -10%;
+    font-size: inherit;
 }
   
 #navMail:hover {
@@ -195,6 +200,7 @@ li.list-inline-item {
     
 .container {
     padding-left: 0px;
+    text-align: center;
 }
 
 .row {
@@ -235,6 +241,7 @@ li.list-inline-item {
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 800;
     text-transform: uppercase;
+    font-size: larger;
 }
   
 #sideNav .navbar-toggler:focus {
@@ -294,4 +301,26 @@ a:hover, a:focus, a:active {
 
 .m-1 {
     margin-top: 5%;
+}
+ 
+  /* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: end;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    position: fixed;
+    transition: margin-right .5s;
+    padding: 20px;
+    right: 0;
 }
