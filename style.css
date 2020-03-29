@@ -1,7 +1,7 @@
 /* general sections */
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,7 +9,8 @@ body {
     padding-top: 54px;
     color: #EEE;
     background-color: #0f1113;
-    margin-left: 10%;
+    margin-left: 5%;
+    transition: .5s;
 }
     
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +36,10 @@ h2:hover {
   
 h3 {
     font-size: 28px;
+}
+
+ul {
+    display: inline;
 }
 
 /* sidebar */
@@ -103,6 +108,7 @@ h3 {
     width: 200px;
     border-radius: 8px;
     margin-bottom: 10px;
+    margin-left: 15%;
 }
 
 .nav-btn:hover {
@@ -125,6 +131,7 @@ h3 {
     color:rgb(196, 208, 248);
     margin-bottom: 5%;
     font-size: inherit;
+    margin-left: 10%;
 }
   
 #navMail:hover {
@@ -204,19 +211,18 @@ li.list-inline-item {
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
+    width: 100%;
 }
   
 .card {
     color: #FFF;
-    width: 90%;
+    width: 80%;
     padding: 3%;
     border-style: solid;
     border-color: rgb(27, 70, 211);
     border-radius: 25px;
     margin-bottom: 15px;
+    margin-left: 10%;
 }
   
 .card h5 {
@@ -226,8 +232,8 @@ li.list-inline-item {
 }
   
 .card img {
-    height: 150px;
-    width: 100%;
+    height: 200px;
+    width: 50%;
     border-color: #0f1113;
     border-radius: 25px;
 }
@@ -255,7 +261,7 @@ li.list-inline-item {
 section.resume {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
-    max-width: 1200px;
+    max-width: 90%;
 }
   
 section.resume .resume-item .resume-date {
@@ -295,8 +301,8 @@ a:hover, a:focus, a:active {
 }
 
 .m-0 {
-    margin-left: 2%;
-    width: 70%
+    margin-left: 0%;
+    width: 90%
 }
 
 .m-1 {
@@ -323,4 +329,152 @@ a:hover, a:focus, a:active {
     transition: margin-right .5s;
     padding: 20px;
     right: 0;
+}
+
+@media only screen and (max-width: 1400px){
+    .section.resume {
+        max-width: 90%;
+        margin-left: -15%;
+    }
+    .subtitle {
+        width: 98%;
+    }
+
+    .card {
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+
+    .list-inline {
+        font-size: 55px;
+        text-align: center;
+        margin-left: -0%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .section.resume {
+        max-width: 90%;
+    }
+    .subtitle {
+        width: 98%;
+    }
+
+    .card {
+        margin-left: 2%;
+        width: 90%;
+    }
+
+    .card img {
+        margin-left: 2%;
+        width: 90%;
+        height: 50%;
+    }
+
+    .card li {
+        list-style-type: none;
+        margin-right: 10px;
+    }
+
+    .navbar-expand {
+        display: none;
+    }
+
+    #main {
+        display: none;
+    }
+
+    .list-inline {
+        font-size: 50px;
+        text-align: center;
+        margin-left: -0%;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .list-inline {
+        font-size: 70px;
+        text-align: center;
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .list-inline {
+        font-size: 70px;
+        text-align: center;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .list-inline {
+        font-size: 63px;
+        text-align: center;
+        margin-left: -0%;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .list-inline {
+        font-size: 55px;
+        text-align: center;
+        margin-left: -0%;
+    }
+}
+
+
+
+@media only screen and (max-width: 390px){
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .list-inline {
+        font-size: 45px;
+        text-align: center;
+        margin-left: -0%;
+    }
+}
+
+@media only screen and (max-width: 310px){
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .list-inline {
+        font-size: 30px;
+        text-align: center;
+        margin-left: -0%;
+    }
 }
