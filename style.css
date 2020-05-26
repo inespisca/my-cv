@@ -455,11 +455,11 @@ a:hover, a:focus, a:active {
   
   .checkbox-tba2:checked + label:before,
   .checkbox-tba2:not(:checked) + label:before{
-    border: 1px solid #f1c40f;
+    border: 1px solid #d3aa08;
   }
   .checkbox-tba2:checked + label:after,
   .checkbox-tba2:not(:checked) + label:after{
-    background-color: #f1c40f;
+    background-color: #d3aa08;
   }
   
   .box{
@@ -481,7 +481,7 @@ a:hover, a:focus, a:active {
     background-color: #2980b9;
   }
   .box.tba2{
-    background-color: #f1c40f;
+    background-color: #d3aa08;
   }
   .box.wcs,
   .box.freefront,
