@@ -54,7 +54,7 @@
         <div id="main">
             <button class="openbtn" onclick="openNav()">&#9776; Open Right Sidebar</button>
         </div>
-        <div class="container">
+        <div class="cont">
             <section class="resume" id="about">
                 <div class="w-100">
                     <h1 class="mb-0">
@@ -164,55 +164,81 @@
                     <div class="subtitle">
                         <h2 class="mb-5">Projects</h2>
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <a href="https://alexandrapatriciosantos.github.io/Tender/" target="_blank"><img src="tender.png" class="card-img-top" alt="Tender"></a>
-                                <div class="card-body">
-                                    <h5 class="card-title">Tender</h5>
-                                    <p class="sub">5 weeks (October/November 2019)</p>
-                                    <p class="card-text">A Tinder parody website done with just frontend and an online API to pretend to be its backend. A group Wild Code School project.</p>
-                                    <p class="card-text">Technologies used: React, CSS, Trello, Visual Studio Code, Github, Git</p>
-                                </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <input class="checkbox-wcs" type="checkbox" id="color-1"  checked="checked"/>
+                            <label for="color-1">Wild Code School</label>
+                            <input class="checkbox-freefront" type="checkbox" id="color-2"  checked="checked"/>
+                            <label for="color-2">freelance - Frontend</label>
+                            <input class="checkbox-freefull" type="checkbox" id="color-3"  checked="checked"/>
+                            <label for="color-3">freelance - Full stack</label>
+                            <input class="checkbox-tba1" type="checkbox" id="color-4"  checked="checked"/>
+                            <label for="color-4">To Be Added Later</label>
+                            <input class="checkbox-tba2" type="checkbox" id="color-5"  checked="checked"/>
+                            <label for="color-5">To Be Added Later</label>
+                            <div class="section p-0 pt-2"></div>
+                            <div class="col box wcs">
+                                <a href="https://loudness-films.herokuapp.com/" target="_blank"><h5 class="card-title">LoudnessFilms</h5></a>
+                                <p class="card-text">Final project for a real client. Node, Express, JS, MSQL & Pug</p>
                             </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card">
-                            <a href="http://loudness-films.herokuapp.com/" target="_blank"><img src="loudness.jpg" class="card-img-top" alt="Loudness Films"></a>
-                                <div class="card-body">
-                                    <h5 class="card-title">Loudness Films</h5>
-                                    <p class="sub">6 weeks (December 2019, January/February 2020)</p>
-                                    <p class="card-text">The final group project at Wild Code School: the real website of a real client - Loudness Films, a Portuguese post-production studio.</p>
-                                    <p class="card-text">Technologies used: Express.js, JavaScript, Sass, Pug/Jade, MySQL, Slack, Trello, Visual Studio Code, Github, Gitlab, Git</p>
-                                </div>
+                            <div class="col box freefront">
+                                <a href="https://test-dictio.netlify.app/" target="_blank"><h5 class="card-title">JS Dictionary</a> | <a href="https://github.com/inespisca/javascript-dictionary">Github</a></h5>
+                                <p class="card-text">A frontend dictionary for practice. HTML, Javascript & CSS</p>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                            <a href="https://xmasvn.netlify.com/" target="_blank"><img src="xmasvn.jpg" class="card-img-top" alt="Christmas Visual Novel"></a>
-                                <div class="card-body">
-                                    <h5 class="card-title">Christmas Visual Novel</h5>
-                                    <p class="sub">72 hours (December 2019)</p>
-                                    <p class="card-text">A hackathon where we had to create a game. Its theme was Christmas. An individual Wild Code School project.</p>
-                                    <p class="card-text">Technologies used: React, CSS, Visual Studio Code, Github, Git</p>
-                                </div>
+                            <div class="col box freefull">
+                                <a href="https://fullstack-dictionary.herokuapp.com/" target="_blank"><h5 class="card-title">Full Stack Dictionary</a> | <a href="https://github.com/inespisca/my-full-stack-dictionary">Github</a></h5>
+                                <p class="card-text">Finally a real dream come true. Node, Express, JS, MSQL & Pug</p>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                            <a href="/" target="_blank"><img src="" class="card-img-top" alt="To be added soon"></a>
-                                <div class="card-body">
-                                    <h5 class="card-title">A fourth project shall be added here soon.</h5>
-                                    <p class="sub"></p>
-                                    <p class="card-text"></p>
-                                    <p class="card-text">The technologies used shall be added here soon as well.</p>
-                                </div>
+                            <div class="col box tba1">
+                                <h5 class="card-title">To be added later</h5>
+                                <p class="card-text">Description and technologies will be here.</p>
+                            </div>
+                            <div class="col box tba2"> 
+                                <h5 class="card-title">To be added later</h5>
+                                <p class="card-text">Description and technologies will be here.</p>
+                            </div>
+                            <div class="col box wcs">
+                                <a href="https://tinderbuttender.netlify.app/" target="_blank"><h5 class="card-title">Tender</a> | <a href="https://github.com/inespisca/TinderButTender">Github</a></h5>
+                                <p class="card-text">A Tinder parody website. Booststrap, React & CSS</p>
+                            </div>
+                            <div class="col box freefront">
+                                <a href="https://mymangalist.netlify.app/" target="_blank"><h5 class="card-title">Frontend Manga List</a> | <a href="https://github.com/inespisca/manga-list">Github</a></h5>
+                                <p class="card-text">Another practice exercise I made. HTML, Javascript & CSS</p>
+                            </div>
+                            <div class="col box freefull">
+                                <a href="https://mymangalist.herokuapp.com" target="_blank"><h5 class="card-title">My Manga List</a> | <a href="https://github.com/inespisca/MyMangaList">Github</a></h5>
+                                <p class="card-text">Created out of personal need. Node, Express, JS, MSQL & Pug</p>
+                            </div>
+                            <div class="col box tba1">
+                                <h5 class="card-title">To be added later</h5>
+                                <p class="card-text">Description and technologies will be here.</p>  
+                            </div>
+                            <div class="col box tba2">
+                                <h5 class="card-title">To be added later</h5>
+                                <p class="card-text">Description and technologies will be here.</p> 
+                            </div>
+                            <div class="col box wcs">
+                                <a href="https://xmasvn.netlify.app/" target="_blank"><h5 class="card-title">Xmas Visual Novel</a> | <a href="https://github.com/inespisca/Hackathon2-Christmas-VN">Github</a></h5>
+                                <p class="card-text">Hackathon - a Christmas game. React & CSS</p>
+                            </div>
+                            <div class="col box freefront">
+                                <a href="https://inesoliveira.netlify.app/" target="_blank"><h5 class="card-title">My CV</a> | <a href="https://github.com/inespisca/my-cv">Github</a></h5>
+                                <p class="card-text">This page you see right now. HTML & CSS</p>
+                            </div>
+                            <div class="col box freefull">
+                                <h5 class="card-title">To be added later</h5>
+                                <p class="card-text">Description and technologies will be here.</p>
+                            </div>
+                            <div class="col box tba1">
+                                <h5 class="card-title">To be added later</h5>
+                                <p class="card-text">Description and technologies will be here.</p>
+                            </div>
+                            <div class="col box tba2">
+                                <h5 class="card-title">To be added later</h5>
+                                <p class="card-text">Description and technologies will be here.</p>
                             </div>
                         </div>
                     </div>
-                    <p>More projects will be added here later on.</p>
                 </div>
             </section>
             <hr class="m-0">
